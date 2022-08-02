@@ -8,7 +8,11 @@ I had to add this `--openssl-legacy-provider` due a error that I got using npm s
 
 I also had to add a few lines (43-48) in package.json due to an error (https://stackoverflow.com/questions/70368760/react-uncaught-referenceerror-process-is-not-defined)
 
-If I had more time I would refactor this app using typescript & react and materialUI (https://mui.com/), I would like to improve styles and fix card size when a row has less than 3 items and implement a crousel on navbar instead of separate images.
+If I had more time I would refactor this app using typescript & react and materialUI (https://mui.com/), I would like to improve styles and fix card size when a row has less than 3 items, and implement a crousel on navbar instead of separate images.
+
+I added a few dependencies:
+   - Axios.
+   - Bootstrap.
 
 ## Instructions
 
