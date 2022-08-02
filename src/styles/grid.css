@@ -1,0 +1,24 @@
+.container {
+    margin-top: 5%;
+}
+
+.gridContainer .d-flex {
+    justify-content: center;
+}
+
+.grid img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 5% 5% 0 0;
+}
+
+.card {
+    width: 70% !important;
+    border-radius: 5%;
+    max-width: 400px;
+}
+
+span {
+    display: block;
+}
