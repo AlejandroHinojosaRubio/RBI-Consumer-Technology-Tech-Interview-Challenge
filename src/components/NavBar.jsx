@@ -4,24 +4,24 @@ import '../styles/navBar.css'
 const NavBar = (props) => {
     
     //Setting styles for selected menu
-    let ifSelected = document.getElementsByClassName("selected");
+    const ifSelected = document.getElementsByClassName("selected");
 
     if (ifSelected.length > 0){
         ifSelected[0].classList.remove('selected');
     }
 
-    let current = document.getElementById(props.selectedMenu);
+    const current = document.getElementById(props.selectedMenu);
     if (current) current.classList.add('selected');
     
     
     //Handler for setting the menu clicked 
     const handleSelectedMenu = (e) => {
-        let menuId = e.target.dataset.menuid;
+        const menuId = e.target.dataset.menuid;
 
         props.onMenuSelect(menuId);
     }
 
-    let mainMenu = props.mainMenu;
+    const mainMenu = props.mainMenu;
 
     const renderNavBar = () => {
         return mainMenu.map(menuOption => {
