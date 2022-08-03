@@ -7,10 +7,10 @@ const Grid = (props) => {
   const getLayaoutForSection = (sections, items, selectedMenu, language) => {
     if (selectedMenu === 'main') return false;
 
-    let gridLayoutData = [];
+    const gridLayoutData = [];
 
     sections[selectedMenu].options.forEach((item) => {
-      let gridItemData = [];
+      const gridItemData = [];
 
       //Check if item id is avaiable on items data
       if (item._ref in items) {
@@ -33,10 +33,10 @@ const Grid = (props) => {
     return chunks;
   };
 
-  var gridLayoutData = getLayaoutForSection(props.sections, props.items, props.selectedMenu, props.language) || props.mainMenu;
+  const gridLayoutData = getLayaoutForSection(props.sections, props.items, props.selectedMenu, props.language) || props.mainMenu;
 
   const renderGrid = (layoutData) => {
-      let gridLayout = arrayChunk(layoutData, 3);
+      const gridLayout = arrayChunk(layoutData, 3);
 
       return gridLayout.map((row, i) => {
         return (
