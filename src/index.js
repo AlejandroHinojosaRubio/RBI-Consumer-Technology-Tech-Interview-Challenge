@@ -31,10 +31,10 @@ const App = () => {
 
     //Getting needed data for building main menu
     const getMainMenu = (sections, menu, language) => {
-        var menuLayout = [];
+        let menuLayout = [];
 
         menu.forEach(data => {
-            var menuItemData = {}
+            let menuItemData = {}
 
             //Check if menu id is avaiable on sections data
             if (data._ref in sections) {
