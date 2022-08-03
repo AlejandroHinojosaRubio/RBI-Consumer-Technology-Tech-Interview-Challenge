@@ -5,7 +5,7 @@ const HistoryNavigation = (props) => {
     
     //Handler for browse into menus history
     const handleBrowseHistory = (e) => {
-        const currentPosition = props.menuHistoryPosition;
+        let currentPosition = props.menuHistoryPosition;
 
         if (e.currentTarget.id === 'next') {
             currentPosition++;
