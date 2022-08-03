@@ -2,7 +2,7 @@ import axios from 'axios';
 
 //Fetch API data to set all needed states
  const getAPIData = async () => {
-    let apiData = {};
+    const apiData = {};
     apiData['error'] = [];
 
     await axios.get(`http://localhost:3001/api/menu`)
@@ -15,7 +15,7 @@ import axios from 'axios';
         });
     await axios.get(`http://localhost:3001/api/sections`)
         .then(res => {
-            let sectionList = {};
+            const sectionList = {};
 
             res.data.forEach(section => {
                 sectionList[section._id] = section;
@@ -29,7 +29,7 @@ import axios from 'axios';
         });
     await axios.get(`http://localhost:3001/api/items`)
         .then(res => {
-            let itemsList = {};
+            const itemsList = {};
 
             res.data.forEach(item => {
                 itemsList[item._id] = item;
